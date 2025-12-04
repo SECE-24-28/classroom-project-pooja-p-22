@@ -5,7 +5,9 @@ import "./App.css";
 // import Task4Component from "./Practice/Task4-component";
 //import PlacementComponent from "./Day3/Placement-component";
 //import PositionComponent from "./Positioning/Position-component";
-import ExcellenceComponent from "./Excellence/Excellence-component";
+//import ExcellenceComponent from "./Excellence/Excellence-component";
+import GetInTouchComponent from "./Day3/get-in-touch-component";
+//import BoxComponent from "./Day4/Box-component";
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
     <Task2Component/>
     <Task3Component/>
     <Task4Component/> 
-    <PositionComponent/>*/}
-    
+    <PositionComponent/>
     <ExcellenceComponent/>
+    <BoxComponent/>*/}
+    <GetInTouchComponent/>
+    
     </>
   );
 }
