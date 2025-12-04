@@ -1,24 +1,12 @@
 import styled from 'styled-components';
 
 export const TaskStyle = styled.div`
-  // background-color: lightblue;
-  // padding: 100px;
-  // border-radius: 100px;
-  // max-width: 500px;
-  // margin: 20px auto;
-  // font-family: Arial;
-
-background-color: #f0f0f0ff;
-padding: 10px;
-border-radius: 10px;      /* big pill */
-max-width: 1100px;         /* wider banner */
-margin: 40px auto;         /* center horizontally */
-font-family: Arial, sans-serif;
-display: flex;
-flex-direction: column;
-align-items: center;       /* center horizontally */
-justify-content: center;   /* center vertically */
-text-align: center;        /* center text */
+  width: 100%;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;   
 
   
   h1.element {
@@ -81,46 +69,24 @@ text-align: center;        /* center text */
   }
 
   .banner {
-    width: 90%;
-    max-width: 1100px;
-    margin: 40px auto;
-    background-color: #ff2445;
-    color: #ffffff;
-    padding: 35px 40px;
-    border-radius: 999px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    background-color: rgb(252, 41, 71);
+    border-radius: 200px;
+    max-width: 1400px;
+    padding: 2rem;
+
   }
 
   .banner__title {
-    font-size: 28px;
-    font-weight: 700;
-    margin: 0 0 12px 0;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
   }
 
   .banner__text {
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0;
-    max-width: 700px;
-  }
-
-  @media (max-width: 768px) {
-    .banner {
-      padding: 24px 20px;
-      border-radius: 40px;
-    }
-
-    .banner__title {
-      font-size: 22px;
-    }
-
-    .banner__text {
-      font-size: 14px;
-    }
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
   }
 `;
