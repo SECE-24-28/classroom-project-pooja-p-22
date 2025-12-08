@@ -6,8 +6,10 @@ import "./App.css";
 //import PlacementComponent from "./Day3/Placement-component";
 //import PositionComponent from "./Positioning/Position-component";
 //import ExcellenceComponent from "./Excellence/Excellence-component";
-import GetInTouchComponent from "./Day3/get-in-touch-component";
+//import GetInTouchComponent from "./Day3/get-in-touch-component";
 //import BoxComponent from "./Day4/Box-component";
+//import OurPromiseComponent from "./Day4/Our-Promise-component";
+import TrustedByComponent from "./Day5/TrustedBy-component";
 
 function App() {
   return (
@@ -17,9 +19,15 @@ function App() {
     <Task3Component/>
     <Task4Component/> 
     <PositionComponent/>
-    <ExcellenceComponent/>
-    <BoxComponent/>*/}
+   
     <GetInTouchComponent/>
+    <BoxComponent/>
+    <OurPromiseComponent/>
+     <ExcellenceComponent/>*/
+    }
+
+    <TrustedByComponent/>
+   
     
     </>
   );
