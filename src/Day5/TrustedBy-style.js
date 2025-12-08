@@ -10,136 +10,139 @@ export const TrustedByStyle = styled.div`
     margin-bottom: 40px;
   }
 
-  .element {
+  .cards {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 2rem;
   }
 
-  .sc-dtBdUo {
-    --shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
-    --circle-width: 90px;
+  .card {
+    --shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    --icon-size: 90px;
+
     padding: 0.8rem;
     border-radius: 10px;
     background-color: white;
     position: relative;
     z-index: 2;
+
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
 
-  .sc-dtInlm {
+  .content {
     position: relative;
     padding: 1rem;
     text-align: center;
     background-color: white;
     border-radius: 10px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     box-shadow: var(--shadow);
+
     width: 230px;
     height: 200px;
   }
 
-  .eHqdkl {
-    border-radius: 10px;
-    height: 50%;
-    width: 100%;
-    z-index: -1;
-    left: 0;
-    right: 0;
+  .separator {
     position: absolute;
-    top: initial;
+    width: 100%;
+    height: 50%;
     bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    z-index: -1;
   }
 
-  .sc-dtBdUo:nth-child(1) .eHqdkl {
+  /* Background colors for each card */
+  .card:nth-child(1) .separator {
     background-color: #01c8c8;
   }
-
-  .sc-dtBdUo:nth-child(2) .eHqdkl {
+  .card:nth-child(2) .separator {
     background-color: #00b7ff;
   }
-
-  .sc-dtBdUo:nth-child(3) .eHqdkl {
+  .card:nth-child(3) .separator {
     background-color: #f5b041;
   }
-
-  .sc-dtBdUo:nth-child(4) .eHqdkl {
+  .card:nth-child(4) .separator {
     background-color: #ff4d4d;
   }
 
-  .sc-cWSHoV {
+  .info {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .sc-kOHTFB {
+  .icon-wrapper {
     position: absolute;
+    top: 0;
     left: 50%;
-    width: var(--circle-width);
-    height: var(--circle-width);
+
+    width: var(--icon-size);
+    height: var(--icon-size);
     padding: 0.4rem;
     border-radius: 50%;
     box-shadow: var(--shadow);
+
     display: flex;
-    justify-content: center;
     align-items: center;
-    top: 0;
+    justify-content: center;
+
     translate: -50% -50%;
     font-size: 32px;
   }
 
-  .sc-kOHTFB.bottom {
+  .icon-wrapper.bottom {
     top: initial;
     bottom: 0;
     translate: -50% 50%;
   }
 
-  .sc-dtBdUo:nth-child(1) .sc-kOHTFB {
+  /* Icon-wrapper background colors */
+  .card:nth-child(1) .icon-wrapper {
     background-color: #01c8c8;
   }
-
-  .sc-dtBdUo:nth-child(2) .sc-kOHTFB {
+  .card:nth-child(2) .icon-wrapper {
     background-color: #00b7ff;
   }
-
-  .sc-dtBdUo:nth-child(3) .sc-kOHTFB {
+  .card:nth-child(3) .icon-wrapper {
     background-color: #f5b041;
   }
-
-  .sc-dtBdUo:nth-child(4) .sc-kOHTFB {
+  .card:nth-child(4) .icon-wrapper {
     background-color: #ff4d4d;
   }
 
-  .icon-inner {
+  /* Inner icon circle */
+  .icon {
     width: 70px;
     height: 70px;
     background-color: white;
     border-radius: 50%;
+
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
     font-size: 28px;
   }
 
-  .sc-dtBdUo:nth-child(1) .icon-inner {
+  /* Icon colors */
+  .card:nth-child(1) .icon {
     color: #01c8c8;
   }
-
-  .sc-dtBdUo:nth-child(2) .icon-inner {
+  .card:nth-child(2) .icon {
     color: #00b7ff;
   }
-
-  .sc-dtBdUo:nth-child(3) .icon-inner {
+  .card:nth-child(3) .icon {
     color: #f5b041;
   }
-
-  .sc-dtBdUo:nth-child(4) .icon-inner {
+  .card:nth-child(4) .icon {
     color: #ff4d4d;
   }
 
@@ -150,7 +153,7 @@ export const TrustedByStyle = styled.div`
     margin-bottom: 8px;
   }
 
-  .name {
+  .label {
     font-size: 16px;
     font-weight: 600;
     color: #999;

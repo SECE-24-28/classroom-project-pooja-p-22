@@ -13,67 +13,75 @@ const TrustedByComponent = () => {
     <TrustedByStyle>
       <h1>Trusted By</h1>
 
-      <div className="element">
+      <div className="cards">
 
         {/* CARD 1 */}
-        <div className="sc-dtBdUo">
-          <div className="sc-dtInlm">
-            <div className="sc-cWSHoV">
+        <div className="card">
+          <div className="content">
+            <div className="info">
               <div className="value">100+</div>
-              <div className="name">COLLEGES </div>
+              <div className="label">COLLEGES</div>
             </div>
           </div>
-          <div className="eHqdkl"></div>
-          <div className="sc-kOHTFB">
-            <div className="icon-inner">
+
+          <div className="separator"></div>
+
+          <div className="icon-wrapper">
+            <div className="icon">
               <FontAwesomeIcon icon={faBuildingColumns} />
             </div>
           </div>
         </div>
 
         {/* CARD 2 */}
-        <div className="sc-dtBdUo top-color">
-          <div className="eHqdkl"></div>
-          <div className="sc-dtInlm">
-            <div className="sc-cWSHoV">
+        <div className="card highlight">
+          <div className="separator"></div>
+
+          <div className="content">
+            <div className="info">
               <div className="value">150</div>
-              <div className="name">PROFESSIONAL TRAINERS</div>
+              <div className="label">PROFESSIONAL TRAINERS</div>
             </div>
           </div>
-          <div className="sc-kOHTFB bottom">
-            <div className="icon-inner">
+
+          <div className="icon-wrapper bottom">
+            <div className="icon">
               <FontAwesomeIcon icon={faChalkboardTeacher} />
             </div>
           </div>
         </div>
 
         {/* CARD 3 */}
-        <div className="sc-dtBdUo">
-          <div className="sc-dtInlm">
-            <div className="sc-cWSHoV">
+        <div className="card">
+          <div className="content">
+            <div className="info">
               <div className="value">1000+</div>
-              <div className="name">STUDY MATERIALS</div>
+              <div className="label">STUDY MATERIALS</div>
             </div>
           </div>
-          <div className="eHqdkl"></div>
-          <div className="sc-kOHTFB">
-            <div className="icon-inner">
+
+          <div className="separator"></div>
+
+          <div className="icon-wrapper">
+            <div className="icon">
               <FontAwesomeIcon icon={faBook} />
             </div>
           </div>
         </div>
 
         {/* CARD 4 */}
-        <div className="sc-dtBdUo top-color">
-          <div className="eHqdkl"></div>
-          <div className="sc-dtInlm">
-            <div className="sc-cWSHoV">
+        <div className="card highlight">
+          <div className="separator"></div>
+
+          <div className="content">
+            <div className="info">
               <div className="value">1,00,000</div>
-              <div className="name">STUDENTS</div>
+              <div className="label">STUDENTS</div>
             </div>
           </div>
-          <div className="sc-kOHTFB bottom">
-            <div className="icon-inner">
+
+          <div className="icon-wrapper bottom">
+            <div className="icon">
               <FontAwesomeIcon icon={faUserGraduate} />
             </div>
           </div>
