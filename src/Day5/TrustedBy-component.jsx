@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { TrustedByStyle } from "./TrustedBy-style";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBuildingColumns,
@@ -9,85 +11,71 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const TrustedByComponent = () => {
+
+  const cards = [
+    {
+      value: "100+",
+      label: "COLLEGES",
+      icon: faBuildingColumns,
+      color: "#01c8c8",
+    },
+    {
+      value: "150",
+      label: "PROFESSIONAL TRAINERS",
+      icon: faChalkboardTeacher,
+      color: "#00b7ff",
+    },
+    {
+      value: "1000+",
+      label: "STUDY MATERIALS",
+      icon: faBook,
+      color: "#f5b041",
+    },
+    {
+      value: "1,00,000",
+      label: "STUDENTS",
+      icon: faUserGraduate,
+      color: "#ff4d4d",
+    },
+  ];
+
   return (
     <TrustedByStyle>
       <h1>Trusted By</h1>
 
       <div className="cards">
+        {cards.map((item, index) => (
+          <div className="card" key={index}>
+            
+            <div
+              className="separator"
+              style={{ backgroundColor: item.color }}
+            ></div>
 
-        {/* CARD 1 */}
-        <div className="card">
-          <div className="content">
-            <div className="info">
-              <div className="value">100+</div>
-              <div className="label">COLLEGES</div>
+            <div className="content">
+              <div className="info">
+                <div className="value">{item.value}</div>
+                <div className="label">{item.label}</div>
+              </div>
             </div>
-          </div>
 
-          <div className="separator"></div>
-
-          <div className="icon-wrapper">
-            <div className="icon">
-              <FontAwesomeIcon icon={faBuildingColumns} />
+            <div
+              className="icon-wrapper"
+              style={{ backgroundColor: item.color }}
+            >
+              <div className="icon" style={{ color: item.color }}>
+                <FontAwesomeIcon icon={item.icon} />
+              </div>
             </div>
+
           </div>
-        </div>
-
-        {/* CARD 2 */}
-        <div className="card highlight">
-          <div className="separator"></div>
-
-          <div className="content">
-            <div className="info">
-              <div className="value">150</div>
-              <div className="label">PROFESSIONAL TRAINERS</div>
-            </div>
-          </div>
-
-          <div className="icon-wrapper bottom">
-            <div className="icon">
-              <FontAwesomeIcon icon={faChalkboardTeacher} />
-            </div>
-          </div>
-        </div>
-
-        {/* CARD 3 */}
-        <div className="card">
-          <div className="content">
-            <div className="info">
-              <div className="value">1000+</div>
-              <div className="label">STUDY MATERIALS</div>
-            </div>
-          </div>
-
-          <div className="separator"></div>
-
-          <div className="icon-wrapper">
-            <div className="icon">
-              <FontAwesomeIcon icon={faBook} />
-            </div>
-          </div>
-        </div>
-
-        {/* CARD 4 */}
-        <div className="card highlight">
-          <div className="separator"></div>
-
-          <div className="content">
-            <div className="info">
-              <div className="value">1,00,000</div>
-              <div className="label">STUDENTS</div>
-            </div>
-          </div>
-
-          <div className="icon-wrapper bottom">
-            <div className="icon">
-              <FontAwesomeIcon icon={faUserGraduate} />
-            </div>
-          </div>
-        </div>
-
+        ))}
+        
       </div>
+
+      <Link to="/slide2">
+            <button>Go to Our Promise</button>
+      </Link>
     </TrustedByStyle>
   );
 };

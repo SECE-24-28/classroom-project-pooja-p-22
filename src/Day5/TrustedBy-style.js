@@ -57,26 +57,7 @@ export const TrustedByStyle = styled.div`
     left: 0;
     border-radius: 10px;
     z-index: -1;
-  }
-
-  /* Background colors for each card */
-  .card:nth-child(1) .separator {
-    background-color: #01c8c8;
-  }
-  .card:nth-child(2) .separator {
-    background-color: #00b7ff;
-  }
-  .card:nth-child(3) .separator {
-    background-color: #f5b041;
-  }
-  .card:nth-child(4) .separator {
-    background-color: #ff4d4d;
-  }
-
-  .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: var(--card-color, #ccc); /* Fallback color */
   }
 
   .icon-wrapper {
@@ -96,29 +77,9 @@ export const TrustedByStyle = styled.div`
 
     translate: -50% -50%;
     font-size: 32px;
+    background-color: var(--card-color, #ccc);
   }
 
-  .icon-wrapper.bottom {
-    top: initial;
-    bottom: 0;
-    translate: -50% 50%;
-  }
-
-  /* Icon-wrapper background colors */
-  .card:nth-child(1) .icon-wrapper {
-    background-color: #01c8c8;
-  }
-  .card:nth-child(2) .icon-wrapper {
-    background-color: #00b7ff;
-  }
-  .card:nth-child(3) .icon-wrapper {
-    background-color: #f5b041;
-  }
-  .card:nth-child(4) .icon-wrapper {
-    background-color: #ff4d4d;
-  }
-
-  /* Inner icon circle */
   .icon {
     width: 70px;
     height: 70px;
@@ -130,20 +91,7 @@ export const TrustedByStyle = styled.div`
     justify-content: center;
 
     font-size: 28px;
-  }
-
-  /* Icon colors */
-  .card:nth-child(1) .icon {
-    color: #01c8c8;
-  }
-  .card:nth-child(2) .icon {
-    color: #00b7ff;
-  }
-  .card:nth-child(3) .icon {
-    color: #f5b041;
-  }
-  .card:nth-child(4) .icon {
-    color: #ff4d4d;
+    color: var(--card-color, #ccc);
   }
 
   .value {
